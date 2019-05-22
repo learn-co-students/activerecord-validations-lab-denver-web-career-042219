@@ -1,0 +1,10 @@
+<h1>Authors</h1>
+<ul>
+<% @authors.each do |author| %>
+<h3>Author: <%= link_to author.name, author_path(author.id) %></h3><br/>
+Phone Number: <%= author.phone_number %><br/><br/>
+<% end %>
+
+
+</ul>
+<%= link_to "Add a New Author", "/authors/new" %>
