@@ -1,0 +1,7 @@
+<h1>Your Author</h1>
+<h3>Author Name: <%= @author.name %></h3>
+<h3>Author Phone Number: <%= @author.phone_number %></h3>
+
+<%= link_to "Back", authors_path %>
+<%= link_to "Edit Author", edit_author_path %>
+<%= link_to "Delete Author", author_path(@author.id), method: "DELETE" %>

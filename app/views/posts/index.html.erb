@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+<ul>
+<% @posts.each do |post| %>
+<h3>Title: <%= post.title %></h3>
+Post Content: <%= post.content %><br>
+Post Summary: <%= post.summary %><br>
+Post Category: <%= post.category %><br><br>
+<%= link_to "See Post", post_path(post.id) %><br><br>
+<% end %>
+
+
+</ul>
+<%= link_to "Add a New Post", "/posts/new" %>

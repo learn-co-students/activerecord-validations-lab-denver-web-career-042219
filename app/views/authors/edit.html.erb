@@ -1,0 +1,10 @@
+<h1>Edit Author</h1>
+<%= form_for @author do |f| %>
+  <%= f.label 'Author Name' %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label 'Author Phone Number' %>
+  <%= f.text_field :phone_number %><br><br>
+
+  <%= f.submit "Update Author" %>
+<% end %>

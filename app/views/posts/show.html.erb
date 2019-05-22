@@ -1,0 +1,8 @@
+<h1>Your Post</h1>
+<h3>Post Title: <%= @post.title %></h3>
+<h4>Post Content: <%= @post.content %></h4>
+Post Summary: <%= @post.summary %><br>
+Post Category: <%= @post.category %><br>
+<%= link_to "Back", posts_path %>
+<%= link_to "Edit Post", edit_post_path %>
+<%= link_to "Delete Post", post_path(@post.id), method: "DELETE" %>
